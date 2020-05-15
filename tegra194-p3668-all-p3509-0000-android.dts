@@ -1,0 +1,34 @@
+#include "tegra194-p3668-all-p3509-0000.dts"
+
+/ {
+	nvidia,dtsfilename = __FILE__;
+
+	firmware {
+		android {
+			compatible = "android,firmware";
+			hardware = "rey";
+			boot_devices = "141a0000.pcie,3460000.sdhci,3400000.sdhci";
+			vbmeta {
+				compatible = "android,vbmeta";
+				parts = "vbmeta,kernel,kernel-dtb,kernel-dtbo,APP,vendor,SOS";
+			};
+			fstab {
+				compatible = "android,fstab";
+				odm {
+					compatible = "android,odm";
+					dev = "/dev/block/by-name/odm";
+					type = "ext4";
+					mnt_flags = "ro";
+					fsmgr_flags = "wait,avb,slotselect";
+				};
+				vendor {
+					compatible = "android,vendor";
+					dev = "/dev/block/by-name/vendor";
+					type = "ext4";
+					mnt_flags = "ro";
+					fsmgr_flags = "wait,avb,slotselect";
+				};
+			};
+		};
+	};
+};
