@@ -10,7 +10,7 @@
 			boot_devices = "141a0000.pcie,3460000.sdhci,3400000.sdhci";
 			vbmeta {
 				compatible = "android,vbmeta";
-				parts = "vbmeta,kernel,kernel-dtb,kernel-dtbo,APP,vendor,SOS";
+				parts = "vbmeta,boot,kernel-dtb,kernel-dtbo,system,vendor,recovery";
 			};
 			fstab {
 				compatible = "android,fstab";
