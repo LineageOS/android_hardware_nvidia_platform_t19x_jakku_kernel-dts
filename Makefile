@@ -11,6 +11,7 @@ endif
 
 dtb-$(BUILD_ENABLE) += tegra194-p3668-all-p3509-0000.dtb
 dtb-$(BUILD_ENABLE) += tegra194-p3668-all-p3509-0000-android.dtb
+dtb-$(BUILD_ENABLE) += tegra194-p3668-all-p3509-0000-android-drm.dtb
 dtb-$(BUILD_ENABLE) += tegra194-p3668-0000-p3509-0000.dtb
 dtb-$(BUILD_ENABLE) += tegra194-p3668-0000-p3509-0000-android.dtb
 dtb-$(BUILD_ENABLE) += tegra194-p3668-0001-p3509-0000.dtb
