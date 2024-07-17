@@ -5,7 +5,7 @@ dtbo-y :=
 makefile-path := platform/t19x/jakku/kernel-dts
 
 BUILD_ENABLE=n
-ifneq ($(filter y,$(CONFIG_ARCH_TEGRA_19x_SOC) $(CONFIG_ARCH_TEGRA_194_SOC)),)
+ifneq ($(filter y,$(CONFIG_ARCH_TEGRA_194_SOC)),)
 BUILD_ENABLE=y
 endif
 
